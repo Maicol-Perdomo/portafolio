@@ -1,0 +1,13 @@
+.presentacion__imagen {
+  width: 98px;
+  height: 98px;
+
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de zoom al pasar el cursor sobre la imagen */
+img:hover {
+  transform: scale(1.1);
+}
