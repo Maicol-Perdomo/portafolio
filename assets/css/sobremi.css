@@ -1,0 +1,8 @@
+.sobremi{
+    background-color: #EAF2FD;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 16px;
+}
