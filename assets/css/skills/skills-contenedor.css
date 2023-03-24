@@ -1,0 +1,11 @@
+.skills__contenedor {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  margin-top: 16px;
+}

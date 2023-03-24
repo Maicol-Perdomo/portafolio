@@ -1,0 +1,12 @@
+.contenedor-imagenes{
+    background-color: #fff;
+
+    width: 40%;
+
+    text-align: center;
+
+}
+
+.contenedor-imagenes p {
+    font-weight: 600;
+}
