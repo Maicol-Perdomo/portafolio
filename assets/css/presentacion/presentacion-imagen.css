@@ -8,6 +8,6 @@
 }
 
 /* Efecto de zoom al pasar el cursor sobre la imagen */
-img:hover {
+.presentacion__imagen:hover {
   transform: scale(1.1);
 }
