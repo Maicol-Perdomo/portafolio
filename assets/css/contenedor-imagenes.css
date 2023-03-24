@@ -1,9 +1,15 @@
 .contenedor-imagenes{
     background-color: #fff;
 
-    width: 40%;
+    padding: 15px;
 
-    text-align: center;
+    width: 35%;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 
 }
 
