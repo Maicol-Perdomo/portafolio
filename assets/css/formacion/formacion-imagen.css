@@ -3,12 +3,15 @@
     padding: 16px;
 
     width: calc(100% - 32px);
-    height: calc(100% - 16px);
+    height: calc(130px - 32px);
+
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .formacion__imagen img{
-    width: 40%
+    max-width: 150px;
+    max-height: 70px;
 }
