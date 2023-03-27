@@ -1,0 +1,8 @@
+.formaciones{
+    background-color: #EAF2FD;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

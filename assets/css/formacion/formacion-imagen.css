@@ -1,0 +1,14 @@
+.formacion__imagen{
+    background-color: #fff;
+    padding: 16px;
+
+    width: calc(100% - 32px);
+    height: calc(100% - 16px);
+
+    display: flex;
+    justify-content: center;
+}
+
+.formacion__imagen img{
+    width: 40%
+}
