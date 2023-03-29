@@ -1,0 +1,11 @@
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    margin: 32px 0;
+}
+
+.experiencia p{
+    margin: 0;
+}
