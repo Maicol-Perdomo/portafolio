@@ -1,0 +1,15 @@
+.formulario__submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2A7AE4;
+  color: #F5F5F5;
+  cursor: pointer;
+}
+
+.formulario__submit:hover {
+  background-color: green;
+  color: #fff;
+}

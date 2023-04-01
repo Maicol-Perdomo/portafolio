@@ -1,0 +1,6 @@
+.contacto__formulario {
+  background-color: #eaf2fd;
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(100% - 32px);
+}

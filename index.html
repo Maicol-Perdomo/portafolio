@@ -63,6 +63,27 @@
     />
     <link rel="stylesheet" href="assets/css/experiencia/experiencia-btns.css" />
     <link rel="stylesheet" href="assets/css/experiencia/experiencia-btn.css" />
+    <!-- Css contacto -->
+    <link rel="stylesheet" href="assets/css/contacto.css" />
+    <link rel="stylesheet" href="assets/css/contacto/contacto-texto.css" />
+    <link rel="stylesheet" href="assets/css/contacto/contacto-formulario.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/contacto/formulario/formulario-campo.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/contacto/formulario/formulario-input.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/contacto/formulario/formulario-label.css"
+    />
+    <link rel="stylesheet" href="assets/css/contacto/formulario/formulario-textarea.css">
+    <link
+      rel="stylesheet"
+      href="assets/css/contacto/formulario/formulario-submit.css"
+    />
   </head>
   <body>
     <!-- menu -->
@@ -295,6 +316,47 @@
           </button>
         </div>
       </div>
+    </section>
+    <!-- Contacto -->
+    <section class="contacto">
+      <h2 class="titulo">Contacto</h2>
+      <p class="contacto__texto">
+        Complete el siguiente formulario y me pondre en contacto con usted lo
+        antes posible
+      </p>
+
+      <form
+        action="https://formspree.io/f/xbjezdar"
+        method="POST"
+        class="contacto__formulario formulario"
+      >
+        <div class="formulario__campo">
+          <label for="nombre" class="formulario__label">Nombre:</label>
+          <input
+            type="text"
+            placeholder="Tu Nombre"
+            name="nombre"
+            class="formulario__input"
+          />
+        </div>
+
+        <div class="formulario__campo">
+          <label for="email" class="formulario__label">E-mail:</label>
+          <input
+            type="email"
+            placeholder="Tu E-mail"
+            name="email"
+            class="formulario__input"
+          />
+        </div>
+
+        <div class="formulario__campo">
+          <label for="mensaje" class="formulario__label">Mensaje:</label>
+          <textarea name="mensaje" class="formulario__textarea"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar" class="formulario__submit" />
+      </form>
     </section>
   </body>
 </html>
