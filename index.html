@@ -79,10 +79,17 @@
       rel="stylesheet"
       href="assets/css/contacto/formulario/formulario-label.css"
     />
-    <link rel="stylesheet" href="assets/css/contacto/formulario/formulario-textarea.css">
+    <link
+      rel="stylesheet"
+      href="assets/css/contacto/formulario/formulario-textarea.css"
+    />
     <link
       rel="stylesheet"
       href="assets/css/contacto/formulario/formulario-submit.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/contacto/formulario/formulario-error.css"
     />
   </head>
   <body>
@@ -337,7 +344,10 @@
             placeholder="Tu Nombre"
             name="nombre"
             class="formulario__input"
+            required
+            data-tipo="nombre"
           />
+          <span class="formulario__error"></span>
         </div>
 
         <div class="formulario__campo">
@@ -347,16 +357,29 @@
             placeholder="Tu E-mail"
             name="email"
             class="formulario__input"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            data-tipo="email"
           />
+          <span class="formulario__error"></span>
         </div>
 
         <div class="formulario__campo">
           <label for="mensaje" class="formulario__label">Mensaje:</label>
-          <textarea name="mensaje" class="formulario__textarea"></textarea>
+          <textarea
+            name="mensaje"
+            class="formulario__textarea"
+            minlength="20"
+            required
+            data-tipo="mensaje"
+          ></textarea>
+          <span class="formulario__error"></span>
         </div>
 
         <input type="submit" value="Enviar" class="formulario__submit" />
       </form>
     </section>
+
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
