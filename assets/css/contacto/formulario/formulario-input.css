@@ -1,6 +1,6 @@
 .formulario__input {
   display: block;
-  width: 100%;
+  width: calc(100% - 32px);
   padding: 10px;
   border-radius: 5px;
   border: none;
