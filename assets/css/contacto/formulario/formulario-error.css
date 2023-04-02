@@ -1,0 +1,7 @@
+.formulario__error {
+  color: red;
+  font-weight: 600;
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
