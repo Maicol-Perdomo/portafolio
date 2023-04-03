@@ -1,0 +1,13 @@
+.formaciones__contenedor{
+    width: calc(100% - 32px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    .formaciones__contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
