@@ -1,6 +1,6 @@
 .presentacion__imagen {
   width: 98px;
-  height: 98px;
+  height: auto;
 
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -10,4 +10,11 @@
 /* Efecto de zoom al pasar el cursor sobre la imagen */
 .presentacion__imagen:hover {
   transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px){
+  .presentacion__imagen{
+    width: 20%;
+    height: auto;
+  }
 }

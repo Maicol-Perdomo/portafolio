@@ -1,6 +1,16 @@
 .presentacion {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    padding: 16px;
+  padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Estilos que se aplicarán a partir de 768px */
+  .presentacion{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+    padding: 32px;
+  }
 }
