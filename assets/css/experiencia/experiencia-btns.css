@@ -1,8 +1,14 @@
-.experiencia__btns{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 45%;
+.experiencia__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
 
-    margin-top: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .experiencia__btns {
+    width: 50%;
+  }
 }
