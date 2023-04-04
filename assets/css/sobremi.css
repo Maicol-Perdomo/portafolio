@@ -13,3 +13,10 @@
     }
     
 }
+
+@media screen and (min-width: 1024px){
+    .sobremi{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
