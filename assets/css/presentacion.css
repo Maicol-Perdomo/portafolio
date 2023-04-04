@@ -1,6 +1,7 @@
 .presentacion {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   padding: 16px;
 }
@@ -12,5 +13,13 @@
     justify-content: space-between;
     
     padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Estilos que se aplicarán a partir de 768px */
+  .presentacion{    
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
