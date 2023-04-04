@@ -8,6 +8,7 @@
 @media screen and (min-width: 768px){
     .formaciones__contenedor{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
