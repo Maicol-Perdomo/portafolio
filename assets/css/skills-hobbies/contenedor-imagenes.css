@@ -1,24 +1,29 @@
-.contenedor__imagenes{
-    background-color: #fff;
+.contenedor__imagenes {
+  background-color: #fff;
 
-    padding: 15px;
+  padding: 15px;
 
-    width: 35%;
-    margin-top: 32px;
+  width: 35%;
+  margin-top: 32px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .contenedor-imagenes p {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
-    .contenedor__imagenes{
-        width: 25%;
-    }
+  .contenedor__imagenes {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contenedor__imagenes {
+    width: 15%;
+  }
 }
