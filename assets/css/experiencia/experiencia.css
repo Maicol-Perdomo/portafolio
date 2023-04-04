@@ -9,3 +9,13 @@
 .experiencia p{
     margin: 0;
 }
+
+@media screen and (min-width: 1024px){
+    .experiencia{
+        flex-direction: row;
+        align-items: center;
+    }
+    .experiencia:nth-child(2n+1){
+        flex-direction: row-reverse;
+    }
+}

@@ -2,3 +2,10 @@
     width: 100%;
     margin-bottom: 16px;
 }
+
+@media screen and (min-width: 1024px){
+    .experiencia__imagen{
+        width: 60%;
+        margin-bottom: 32px;
+    }
+}
