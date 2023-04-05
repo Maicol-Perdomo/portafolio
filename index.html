@@ -96,6 +96,8 @@
     <link rel="stylesheet" href="assets/css/experiencia/experiencia-btn.css" />
     <!-- Css contacto -->
     <link rel="stylesheet" href="assets/css/contacto.css" />
+    <link rel="stylesheet" href="assets/css/contacto/contacto-imagen.css">
+    <link rel="stylesheet" href="assets/css/contacto/contacto-informacion.css">
     <link rel="stylesheet" href="assets/css/contacto/contacto-texto.css" />
     <link rel="stylesheet" href="assets/css/contacto/contacto-formulario.css" />
     <link
@@ -372,58 +374,65 @@
     </section>
     <!-- Contacto -->
     <section id="contacto" class="contacto">
-      <h2 class="titulo">Contacto</h2>
-      <p class="contacto__texto">
-        Complete el siguiente formulario y me pondre en contacto con usted lo
-        antes posible
-      </p>
+      <img
+        class="contacto__imagen"
+        src="assets/img/telefono.png"
+        alt="Telefono imagen"
+      />
+      <div class="contacto__informacion">
+        <h2 class="titulo">Contacto</h2>
+        <p class="contacto__texto">
+          Complete el siguiente formulario y me pondre en contacto con usted lo
+          antes posible
+        </p>
 
-      <form
-        action="https://formspree.io/f/xbjezdar"
-        method="POST"
-        class="contacto__formulario formulario"
-      >
-        <div class="formulario__campo">
-          <label for="nombre" class="formulario__label">Nombre:</label>
-          <input
-            type="text"
-            placeholder="Tu Nombre"
-            name="nombre"
-            class="formulario__input"
-            required
-            data-tipo="nombre"
-          />
-          <span class="formulario__error"></span>
-        </div>
+        <form
+          action="https://formspree.io/f/xbjezdar"
+          method="POST"
+          class="contacto__formulario formulario"
+        >
+          <div class="formulario__campo">
+            <label for="nombre" class="formulario__label">Nombre:</label>
+            <input
+              type="text"
+              placeholder="Tu Nombre"
+              name="nombre"
+              class="formulario__input"
+              required
+              data-tipo="nombre"
+            />
+            <span class="formulario__error"></span>
+          </div>
 
-        <div class="formulario__campo">
-          <label for="email" class="formulario__label">E-mail:</label>
-          <input
-            type="email"
-            placeholder="Tu E-mail"
-            name="email"
-            class="formulario__input"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            data-tipo="email"
-          />
-          <span class="formulario__error"></span>
-        </div>
+          <div class="formulario__campo">
+            <label for="email" class="formulario__label">E-mail:</label>
+            <input
+              type="email"
+              placeholder="Tu E-mail"
+              name="email"
+              class="formulario__input"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              data-tipo="email"
+            />
+            <span class="formulario__error"></span>
+          </div>
 
-        <div class="formulario__campo">
-          <label for="mensaje" class="formulario__label">Mensaje:</label>
-          <textarea
-            name="mensaje"
-            class="formulario__textarea"
-            minlength="20"
-            required
-            data-tipo="mensaje"
-          ></textarea>
-          <span class="formulario__error"></span>
-        </div>
+          <div class="formulario__campo">
+            <label for="mensaje" class="formulario__label">Mensaje:</label>
+            <textarea
+              name="mensaje"
+              class="formulario__textarea"
+              minlength="20"
+              required
+              data-tipo="mensaje"
+            ></textarea>
+            <span class="formulario__error"></span>
+          </div>
 
-        <input type="submit" value="Enviar" class="formulario__submit" />
-      </form>
+          <input type="submit" value="Enviar" class="formulario__submit" />
+        </form>
+      </div>
     </section>
     <!-- footer -->
     <footer class="footer">

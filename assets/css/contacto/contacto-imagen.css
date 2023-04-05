@@ -1,0 +1,10 @@
+.contacto__imagen {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacto__imagen {
+    margin-right: 32px;
+    display: inline-block;
+  }
+}
