@@ -9,11 +9,6 @@
   cursor: pointer;
 }
 
-.formulario__submit:hover {
-  background-color: green;
-  color: #f5f5f5;
-}
-
 @media screen and (min-width: 768px) {
   .formulario__submit{
     width: 50%;

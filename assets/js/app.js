@@ -1,15 +1,21 @@
-const inputs = document.querySelectorAll("input");
-const mensajeInput = document.querySelector("textarea");
-
-mensajeInput.addEventListener('blur', (event) => {
-  valida(event.target);
+document.addEventListener("DOMContentLoaded", function () {
+  validarFormulario();
 });
 
-inputs.forEach((input) => {
-  input.addEventListener("blur", (input) => {
-    valida(input.target);
+function validarFormulario() {
+  const inputs = document.querySelectorAll("input");
+  const mensajeInput = document.querySelector("textarea");
+
+  mensajeInput.addEventListener("blur", (event) => {
+    valida(event.target);
   });
-});
+
+  inputs.forEach((input) => {
+    input.addEventListener("blur", (input) => {
+      valida(input.target);
+    });
+  });
+}
 
 function valida(input) {
   const tipoDeInput = input.dataset.tipo;
@@ -23,11 +29,7 @@ function valida(input) {
   }
 }
 
-const tipoDeErrores = [
-  "valueMissing",
-  "patternMismatch",
-  "tooShort"
-];
+const tipoDeErrores = ["valueMissing", "patternMismatch", "tooShort"];
 
 const mensajesDeError = {
   nombre: {
@@ -35,11 +37,11 @@ const mensajesDeError = {
   },
   email: {
     valueMissing: "El campo correo no puede estar vacío",
-    patternMismatch: "El correo no es válido"
+    patternMismatch: "El correo no es válido",
   },
   mensaje: {
     valueMissing: "Este campo mensaje no puede estar vacío",
-    tooShort: "El mensaje debe contener más de 10 caracteres."
+    tooShort: "El mensaje debe contener más de 10 caracteres.",
   },
 };
 
