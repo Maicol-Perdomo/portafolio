@@ -5,3 +5,10 @@
 
     padding: 32px;
 }
+
+@media screen and (min-width: 1024px) {
+    .experiencias{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
